@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Overpass';
+    
+    
+}
+
+header{
+    display: grid;
+    
+
+    
+}
+.Head{
+    
+    background:url(images/bg-pattern-intro.svg) ,
+    linear-gradient(to bottom, hsl(13, 100%, 72%),hsl(353, 100%, 62%)) ;
+background-repeat: no-repeat;
+background-size:  cover   ;
+background-position:  center  left;
+background-attachment: fixed;
+    
+    border-radius: 0 0  0 110px;
+   padding: 55px;
+   
+   
+}
+
+.droite,.left{
+    display: flex;
+    
+
+}
+.droite{
+    margin-left: 94px;
+    
+    
+}
+.droite div{
+    margin: 12px;
+}
+.logo{
+    position: relative;
+    bottom: 5px;
+    right: 10px;
+}
+.img{
+    padding-left:7px ;
+}
+.left{
+    justify-content: flex-end;
+    position: relative;
+    bottom: 10px;
+    left: 400px;
+}
+.left div{
+    margin: 12px;
+}
+
+.left div button{
+    width: 100px;
+    text-transform: capitalize;
+    text-shadow: hsl(353, 100%, 62%)  1px 0.5px;
+    
+color: hsl(353, 100%, 62%);
+    border-style: solid;
+    border-color: white;
+    background-color: white;
+    
+    
+    margin-bottom:20px ;
+    
+    border-radius: 15px;
+}
+.drop{
+    position: relative;
+    top: 1px;
+    left: 8px;
+    
+}
+
+a{
+    text-decoration: none;
+    color:hsl(0, 0%, 100%); 
+    
+   
+}
+.para{
+    text-align: center;
+    margin-top: 10px;
+    color:hsl(0, 0%, 100%) ;
+
+}
+.para h1{
+    font-size: 50px;
+    margin-top: 20px;
+} 
+.para p{
+    margin-top: 15px;
+}
+.btn{
+    margin: 15px;
+
+}
+.btn form input{
+    border-style: solid;
+    border-color: white;
+    padding: 10px;
+border-radius: 25px;
+margin: 5px;
+
+}
+.btn1{
+    background-color: white; 
+    color: hsl(353, 100%, 62%);
+    text-shadow:hsl(353, 100%, 62%) 1px 0.5px;
+}
+.btn2{
+    background-image: linear-gradient(to right, hsl(13, 100%, 72%),hsl(353, 100%, 62%)) ;
+    
+    color: white;
+}
+.part1{
+    margin-top: 80px;
+    text-align: center;
+}
+
+.monDiv{
+    display: flex;
+    padding: 20px;
+    
+}
+.moi{
+ margin-left: 125px;
+   position: relative;
+   bottom: 125px;
+   
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.Phone{
+    position: relative;
+    left: 116px;
+}
+.mesELM{
+    margin-left: 70px;
+    margin-top: 40px;
+}
+.mesELM p{
+    width: 500px;
+    height: 180px;
+    color: hsl(207, 13%, 34%);
+}
+.part1,h3{
+    color:  hsl(237, 23%, 32%);
+}
+
+.ftr{
+    background-image:
+     linear-gradient(to right,hsl(237, 17%, 21%),hsl(237, 17%, 21%) );
+    display: flex;
+    border-radius:0 100px 0 100px ;
+    height: 460px;
+    position: relative;
+    bottom: 105px;
+   
+
+}
+.ftr caption{
+    margin-top: 0;
+    margin-bottom: 0;
+    
+}
+.mesE2{
+   
+    position: absolute;
+    top: 185px;
+    left: 750px;
+    width: 570px;
+
+    height: 185px;
+    color: hsl(0, 0%, 100%,0.7);
+    padding-right: 85px;
+    
+
+}
+
+.mesE2 h3{
+color: white;
+width: 489px;
+}
+
+
+.sect3{
+   display: flex;
+    padding-left: 87px;
+    position: relative;
+
+    
+    
+}
+.sect3 img{
+    max-width: 100%;
+    height: auto;
+}
+.mDiV3{
+    margin-top: 95px;
+    width: 480px;
+    height: 250px;
+    position: absolute;
+    left:750px;
+    margin-bottom: 24px;
+    padding-bottom: 30px;
+    
+
+
+    
+ }
+ 
+ .mDiV3 p{
+     color: hsl(207, 13%, 34%);
+ }
+ .mDiV3 h3{
+    color: hsl(237, 23%, 32%);
+}
+ footer{
+     background-color: hsl(240, 10%, 16%);
+     border-radius: 100px 0 0 0;
+     padding: 40px;
+
+ }
+ .entete{
+     position: relative;
+     top: 36px;
+     left:70px;
+ }
+ .entete h5{
+color: white;
+ }
+ 
+ul{
+    list-style: none;
+}
+
+ul li{
+    color: hsl(207, 13%, 34%);
+}
+
+.mli{
+    position: relative;
+    top: 10px;
+ }
+
+.elmFooter{
+
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+
+.attribution{
+    text-align: center;
+    background-color: khaki;
+    
+}
+@media (max-width:600px){
+    .Head{
+        grid-area: entete;
+        flex-wrap: wrap;
+    }
+    .section1{
+        grid-area: section;
+        flex-wrap: wrap;
+    }
+    .ftr{
+        grid-area: ftr;
+        flex-wrap: wrap;
+    }
+    .section3{
+        grid-area: section3;
+        flex-wrap: wrap;
+    }
+    footer{
+        grid-area: footer;
+        width: max-content;
+    }
+    
+    .principale{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "entete"
+                              "section"
+                              "ftr"
+                              "section3";
+                              font-size: 10px;
+    }
+    img{
+        
+        height: auto;
+
+    }
+   
+    
+    
+   
+    
+
+}
